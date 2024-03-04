@@ -80,8 +80,9 @@ h3 {
 }
 
 #new-btn:hover {
+    font-size: 1.5rem;
     height: 10vmin;
-    width: 20vmin;
+    width: 25vmin;
     cursor: pointer;
 }
 
@@ -107,7 +108,7 @@ h3 {
     }
 
     to {
-        font-size: 15vmin;
+        font-size: 10vmin;
     }
 }
 
