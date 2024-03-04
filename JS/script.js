@@ -13,6 +13,7 @@ let bgaudio = new Audio("music.mp3");
 let dispTurn = document.querySelector('#disp-turn')
 // console.log(dispTurn)
 
+let cont = document.getElementsByClassName('container')
 const winPatterns = [
     [0, 1, 2],
     [0, 3, 6],
@@ -67,7 +68,7 @@ const enabledBoxes = () => {
     }
 }
 const showWinner = (winner) => {
-    gameEndAudio.play()
+    gameEndAudio.play();
     msg.innerText = ` Winner is : ${winner}`;
     bgaudio.play()
     msgContainer.classList.remove("hide")
@@ -75,10 +76,10 @@ const showWinner = (winner) => {
     // resetBtn.classList.toggle('hide');
 }
 const draw = () => {
+    gameEndAudio.play();
     msg.innerText = `Game is Draw`;
     msgContainer.classList.remove("hide")
     disabledBoxes();
-    resetBtn.classList.add('hide');
 }
 
 const checkWinner = () => {
